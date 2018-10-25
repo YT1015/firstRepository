@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B0207F573BE6CB93883AB6D /* Pods_ButtonText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8CBDE2D0F3483408B20424 /* Pods_ButtonText.framework */; };
 		71288B4F2179AE15004F2964 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71288B4E2179AE15004F2964 /* AppDelegate.m */; };
 		71288B522179AE15004F2964 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71288B512179AE15004F2964 /* ViewController.m */; };
 		71288B552179AE15004F2964 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71288B532179AE15004F2964 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D8CBDE2D0F3483408B20424 /* Pods_ButtonText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButtonText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71288B4A2179AE15004F2964 /* ButtonText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71288B4D2179AE15004F2964 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71288B4E2179AE15004F2964 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		71288B732179AE1D004F2964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71288B832179AED0004F2964 /* UIButton+Edgs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Edgs.h"; sourceTree = "<group>"; };
 		71288B842179AED0004F2964 /* UIButton+Edgs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Edgs.m"; sourceTree = "<group>"; };
+		AFBE0BBC4DE46F3540D5B478 /* Pods-ButtonText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButtonText.release.xcconfig"; path = "Pods/Target Support Files/Pods-ButtonText/Pods-ButtonText.release.xcconfig"; sourceTree = "<group>"; };
+		E2926AF48BDBC1026ABC45F1 /* Pods-ButtonText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButtonText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ButtonText/Pods-ButtonText.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B0207F573BE6CB93883AB6D /* Pods_ButtonText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +93,8 @@
 				71288B652179AE1D004F2964 /* ButtonTextTests */,
 				71288B702179AE1D004F2964 /* ButtonTextUITests */,
 				71288B4B2179AE15004F2964 /* Products */,
+				F86B89F9B36CC5FC3C6076C3 /* Pods */,
+				E1744BE67F35C798759B2898 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +144,23 @@
 			path = ButtonTextUITests;
 			sourceTree = "<group>";
 		};
+		E1744BE67F35C798759B2898 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D8CBDE2D0F3483408B20424 /* Pods_ButtonText.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F86B89F9B36CC5FC3C6076C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2926AF48BDBC1026ABC45F1 /* Pods-ButtonText.debug.xcconfig */,
+				AFBE0BBC4DE46F3540D5B478 /* Pods-ButtonText.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +168,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71288B762179AE1D004F2964 /* Build configuration list for PBXNativeTarget "ButtonText" */;
 			buildPhases = (
+				22D2C7A0641B11BBD09058D4 /* [CP] Check Pods Manifest.lock */,
 				71288B462179AE15004F2964 /* Sources */,
 				71288B472179AE15004F2964 /* Frameworks */,
 				71288B482179AE15004F2964 /* Resources */,
@@ -261,6 +286,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22D2C7A0641B11BBD09058D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ButtonText-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		71288B462179AE15004F2964 /* Sources */ = {
@@ -439,16 +485,14 @@
 		};
 		71288B772179AE1D004F2964 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2926AF48BDBC1026ABC45F1 /* Pods-ButtonText.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DAR394TX6;
 				INFOPLIST_FILE = ButtonText/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JJXT.ButtonText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,16 +501,14 @@
 		};
 		71288B782179AE1D004F2964 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFBE0BBC4DE46F3540D5B478 /* Pods-ButtonText.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DAR394TX6;
 				INFOPLIST_FILE = ButtonText/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JJXT.ButtonText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -480,11 +522,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DAR394TX6;
 				INFOPLIST_FILE = ButtonTextTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JJXT.ButtonTextTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -499,11 +537,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DAR394TX6;
 				INFOPLIST_FILE = ButtonTextTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JJXT.ButtonTextTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -517,11 +551,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DAR394TX6;
 				INFOPLIST_FILE = ButtonTextUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JJXT.ButtonTextUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -535,11 +565,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DAR394TX6;
 				INFOPLIST_FILE = ButtonTextUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JJXT.ButtonTextUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
