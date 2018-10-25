@@ -1,0 +1,6 @@
+framework module Pods_ButtonText {
+  umbrella header "Pods-ButtonText-umbrella.h"
+
+  export *
+  module * { export * }
+}
